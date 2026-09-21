@@ -1,0 +1,7 @@
+﻿fiscal_year,segment,revenue,revenue_growth_pct,revenue_share_pct,operating_earnings,operating_margin_pct,normalized_operating_earnings,normalized_operating_margin_pct,ebitda,ebitda_margin_pct,normalized_ebitda,normalized_ebitda_margin_pct,source_report,source_page
+2023,Industrial,2646.3,38.3,27.2,460.9,17.4,471.4,17.8,526.1,19.9,537.2,20.3,2023-Annual-Report.pdf,15
+2023,Mobility,7087.2,18,72.8,313.9,4.4,327.5,4.6,759.3,10.7,775.1,10.9,2023-Annual-Report.pdf,15
+2024,Industrial,3093.6,16.9,29.2,589.2,19,516.2,16.7,682.5,22.1,610.5,19.7,2024-Annual-Report.pdf,14;31
+2024,Mobility,7488.4,5.7,70.8,22.1,0.3,427.7,5.7,547.3,7.3,954.2,12.7,2024-Annual-Report.pdf,14;31
+2025,Industrial,2494.3,-19.4,24.4,329.3,13.2,359.5,14.4,425.6,17.1,455.8,18.3,2025-Annual-Report-Final.pdf,10;27
+2025,Mobility,7737.5,3.3,75.6,562.8,7.3,574.4,7.4,1109.2,14.3,1120.8,14.5,2025-Annual-Report-Final.pdf,10;27

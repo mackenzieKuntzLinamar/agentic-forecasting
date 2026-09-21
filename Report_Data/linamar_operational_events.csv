@@ -1,0 +1,33 @@
+﻿fiscal_year,category,indicator_name,numeric_value,unit,source_report,source_page
+2022,company_profile,employee_count,28000,employees,2022-Annual-Report.pdf,12
+2022,company_profile,manufacturing_location_count,66,locations,2022-Annual-Report.pdf,12
+2022,company_profile,rd_centre_count,14,centres,2022-Annual-Report.pdf,12
+2022,company_profile,sales_office_count,28,offices,2022-Annual-Report.pdf,12
+2022,company_profile,country_count,17,countries,2022-Annual-Report.pdf,12
+2023,company_profile,employee_count,32000,employees,2023-Annual-Report.pdf,14
+2023,company_profile,manufacturing_location_count,75,locations,2023-Annual-Report.pdf,14
+2023,company_profile,rd_centre_count,17,centres,2023-Annual-Report.pdf,14
+2023,company_profile,sales_office_count,31,offices,2023-Annual-Report.pdf,14
+2023,company_profile,country_count,19,countries,2023-Annual-Report.pdf,14
+2024,company_profile,employee_count,33000,employees,2024-Annual-Report.pdf,13
+2024,company_profile,manufacturing_location_count,75,locations,2024-Annual-Report.pdf,13
+2024,company_profile,rd_centre_count,16,centres,2024-Annual-Report.pdf,13
+2024,company_profile,sales_office_count,31,offices,2024-Annual-Report.pdf,13
+2024,company_profile,country_count,19,countries,2024-Annual-Report.pdf,13
+2025,company_profile,employee_count,36000,employees,2025-Annual-Report-Final.pdf,9
+2025,company_profile,manufacturing_location_count,86,locations,2025-Annual-Report-Final.pdf,9
+2025,company_profile,rd_centre_count,17,centres,2025-Annual-Report-Final.pdf,9
+2025,company_profile,sales_office_count,31,offices,2025-Annual-Report-Final.pdf,9
+2025,company_profile,country_count,19,countries,2025-Annual-Report-Final.pdf,9
+2022,business_win,electrified_new_business_win_share,53,percent,2022-Annual-Report.pdf,5;8
+2022,business_win,electrified_new_business_wins_annual_sales,1000,CAD millions annual sales,2022-Annual-Report.pdf,5
+2022,acquisition,completed_acquisition_count,2,acquisitions,2022-Annual-Report.pdf,3
+2023,business_win,electrified_new_business_win_share,54,percent,2023-Annual-Report.pdf,4
+2023,business_win,propulsion_agnostic_or_ev_win_share,68,percent,2023-Annual-Report.pdf,4
+2023,sustainability,energy_savings_identified,100,GWh,2023-Annual-Report.pdf,5
+2023,sustainability,energy_savings_implemented,55,GWh,2023-Annual-Report.pdf,5
+2023,acquisition,acquisitions_announced_count,3,acquisitions,2023-Annual-Report.pdf,3
+2023,acquisition,acquisitions_completed_count,2,acquisitions,2023-Annual-Report.pdf,3
+2024,business_win,takeover_work_won,185,CAD millions,2024-Annual-Report.pdf,9
+2024,operations,flexible_mobility_equipment_share,85,percent,2024-Annual-Report.pdf,9
+2025,acquisition,completed_acquisition_count,2,acquisitions,2025-Annual-Report-Final.pdf,1
