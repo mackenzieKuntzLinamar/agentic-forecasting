@@ -83,7 +83,7 @@ def build_starter_agent_config(
     search_model: str = LITE_MODEL,
     *,
     enable_search: bool = True,
-    enable_code_exec: bool = False,
+    enable_code_exec: bool = True,
 ) -> AgentConfig:
     """Build the toggle-driven LNR starter-agent configuration."""
     skills_dirs: list[Path] = [_FORECASTING_SKILL]
