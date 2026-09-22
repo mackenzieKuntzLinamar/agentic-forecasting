@@ -3,12 +3,20 @@
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 from typing import Any, Literal
 
 import pandas as pd
-from base import BaseAdapter
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
+
+from aieng.forecasting.data.adapters.base import BaseAdapter
+
+
+if __package__ in (None, ""):
+    adapter_directory = str(Path(__file__).resolve().parent)
+    if sys.path and sys.path[0] == adapter_directory:
+        sys.path.pop(0)
 
 
 # Supported Yahoo Finance daily history fields.
@@ -257,8 +265,7 @@ class YFinanceDailyAdapter(BaseAdapter):
         )
 
 
-if __name__ == "__main__":
-    __all__ = [
+__all__ = [
     "YFinanceDailyAdapter",
     "YFinanceDailyConfig",
     "YFinanceField",
@@ -304,4 +311,3 @@ if __name__ == "__main__":
         print(f"Current Price: ${latest_price:.2f}")
         print(f"Difference: ${change:.2f}")
         print(f"Percent Change: {pct_change:.2f}%")
-    main()
