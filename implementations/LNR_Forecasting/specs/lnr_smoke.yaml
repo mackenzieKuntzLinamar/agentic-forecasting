@@ -1,0 +1,32 @@
+# Fast target-only smoke design for LNR.TO.
+# Predictor choices and hyperparameters belong in the calling notebook/script.
+
+spec_id: lnr_smoke
+
+description: >-
+  Smoke comparison for Linamar Corporation adjusted-close cumulative log returns
+  at 1, 5, and 21 business-day horizons.
+
+tasks:
+  - task_id: lnr_logret_1b
+    target_series_id: lnr_logret_1b
+    horizons: [1]
+    frequency: B
+    description: LNR.TO next-session adjusted-close log return.
+
+  - task_id: lnr_logret_5b
+    target_series_id: lnr_logret_5b
+    horizons: [5]
+    frequency: B
+    description: LNR.TO forward one-week adjusted-close log return.
+
+  - task_id: lnr_logret_21b
+    target_series_id: lnr_logret_21b
+    horizons: [21]
+    frequency: B
+    description: LNR.TO forward one-month adjusted-close log return.
+
+start: "2025-10-06"
+end: "2025-11-14"
+stride: 5
+warmup: 250
