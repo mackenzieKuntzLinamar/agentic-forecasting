@@ -52,7 +52,7 @@ Every domain implementation (S&P 500, food, energy, BoC) now ships a **`starter_
 
 ### Broaden coverage
 
-- Transpose the S&P 500 template to additional energy commodities, or to other liquid assets, equities, or indices. The S&P 500 reference now compares conventional numerical methods (incl. ETS and Kalman) against a **covariate-aware LLM-Process** across cumulative-return horizons — `SampledTrajectoryLLMPredictor` supports `covariate_series_ids` (exogenous-series prompt blocks), so the "can an LLM use the covariate panel as well as gradient boosting?" comparison is shipped, not deferred.
+- Transpose the S&P 500 template to additional energy commodities, or to other liquid assets, equities, or indices. The S&P 500 reference now compares conventional numerical methods (incl. ETS and Kalman) against a **covariate-aware LLM-Process** across cumulative-return horizons — `SampledTrajectoryLLMPredictor` supports `covariate_series_ids` (exogenous-series prompt blocks), so the "can an LLM use the covariate panel as well as gradient boosting?" comparison is shipped, not deferred. The LNR stock-return adaptation is now available under `implementations/LNR_Forecasting/` as a Yahoo-only numerical starting point.
 - Add richer FRED covariates for food, energy, or financial markets. Extending covariate-aware prompting to the other LLM-Process predictors (`QuantileGridLLMPredictor`, …) is a natural next step.
 - Reframe a continuous target as a binary or categorical question (the BoC harness shows the pattern).
 - Add time-series foundation models or additional numerical methods once an implementation has one strong baseline.

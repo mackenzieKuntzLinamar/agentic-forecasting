@@ -18,6 +18,8 @@ implementations/
 |   `-- specs/                #     backtest and eval YAML
 |-- sp500_forecasting/        # 1 · S&P 500 multivariate numerical comparison (financial markets)
 |   `-- specs/                #     backtest YAML (smoke + full)
+|-- LNR_Forecasting/          # 1a · Linamar (LNR.TO) stock-return adaptation of S&P 500
+|   `-- specs/                #     LNR smoke backtest YAML
 |-- food_price_forecasting/   # 2 · CFPR-style food CPI experiment
 |   `-- specs/                #     backtest YAML
 |-- energy_oil_forecasting/   # 3 · Daily WTI oil price forecasting experiment
