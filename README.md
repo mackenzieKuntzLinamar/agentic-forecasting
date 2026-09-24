@@ -11,6 +11,7 @@ The repo has two layers. A small core library (`aieng.forecasting`) owns cutoff-
 | 0 | [Getting started](implementations/getting_started/) | Canada CPI gasoline, one month ahead — the smallest end-to-end loop | Naive last-value, AutoARIMA; CRPS via `backtest()` / `evaluate()` |
 | 1 | [S&P 500](implementations/sp500_forecasting/) | Daily index returns under a leak-safe macro/market covariate panel (1 / 5 / 21 business-day horizons) | Naive, ETS, Kalman, AutoARIMA, linear regression, LightGBM; covariate-aware LLM-Process |
 | 1a | [LNR stock forecasting](implementations/LNR_Forecasting/) | Linamar Corporation (`LNR.TO`) adjusted-close returns under a leak-safe Yahoo market covariate panel (1 / 5 / 21 business-day horizons) | Reusable numerical predictors; target-only and covariate-aware service |
+| 1b | [Energy-sensitive LNR forecasting](implementations/energy_oil_for_lnr/) | Linamar Corporation returns with lagged WTI, volatility, and dollar-index signals | Shared multitask analyst agent; trajectory, upside-shock, and scenario tasks |
 | 2 | [Food price forecasting](implementations/food_price_forecasting/) | Multivariate Canadian food CPI in the style of Canada's Food Price Report (nine sub-indices, 12-month trajectory, avg/avg YoY) | Naive last-value, AutoARIMA; report-grounded LLM-Process (quantile grid and sampled trajectory) |
 | 3 | [Energy / oil](implementations/energy_oil_forecasting/) | Daily WTI crude under regime-breaking news (continuous trajectory, binary up-shock, scenario analysis) | Prophet, LLM-Process, news-grounded agent, code-executing agent, adaptive (curriculum-trained) agent |
 | 4 | [BoC rate decisions](implementations/boc_rate_decisions/) | Will the Bank of Canada cut, hold, or hike at its next meeting? (ordered categorical; binary cut-vs-not special case) | Climatological frequency, multinomial logistic, categorical LLM-Process, analyst agent; LLM-as-judge reasoning alignment |
@@ -40,7 +41,7 @@ Use cases, methods, and links are in the [contents](#contents) table above. Each
 
 **Start here → #0 [`getting_started/`](implementations/getting_started/)** if the evaluation loop is new to you. That directory also includes [`99_repo_concierge.ipynb`](implementations/getting_started/99_repo_concierge.ipynb) — a lite-model repo guide for “how does this codebase work?” questions (`uv run adk run implementations/getting_started/concierge_agent` from the repo root).
 
-**Not sure where to start building?** Each of the four domain implementations (#1–#4) ends with a `99_starter_agent.ipynb` — a fresh, hackable **starter agent** (a `starter_agent/` module) with toggleable news search and code execution, two lightweight tool-usage skills, an interactive cell, and one scored forecast. It's the consistent "continue from here" entry point for taking any reference use case in an agentic direction, and a quick end-to-end test of that use case's agent stack.
+**Not sure where to start building?** Each domain implementation ships a fresh, hackable **starter agent** (a `starter_agent/` module) with an interactive path and a scored forecast. The energy-sensitive LNR adaptation keeps a focused `01_lnr_energy_agent.ipynb` because it is a specialized companion to the LNR implementation rather than a separate curriculum track.
 
 ## Time Series Data sources
 

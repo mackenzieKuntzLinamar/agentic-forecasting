@@ -130,3 +130,10 @@ uv run python scripts/fetch_wti.py   # optional: pre-populate WTI cache
 ```
 
 Run `make lint` before pushing changes to this use case.
+
+## LNR adaptation
+
+The energy/oil agent pattern is also applied to Linamar returns in
+[`../energy_oil_for_lnr/`](../energy_oil_for_lnr/). That companion keeps WTI as
+a lagged explanatory covariate and changes the output contracts to LNR
+cumulative log returns, upside-return probability, and CAD-price scenarios.

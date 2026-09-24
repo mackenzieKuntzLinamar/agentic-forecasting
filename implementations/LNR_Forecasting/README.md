@@ -44,3 +44,8 @@ imports and target IDs with the exports from `LNR_Forecasting.data`.
 The forecasts are statistical return forecasts, not investment advice. LNR is
 an industrial stock, so WTI is treated as one market covariate rather than as a
 proxy for the company's revenue or fundamentals.
+
+For the agentic version of this experiment, see the
+[energy-sensitive LNR implementation](../energy_oil_for_lnr/), which reuses
+this cutoff-safe service and adds the energy/oil multitask and starter-agent
+patterns.
